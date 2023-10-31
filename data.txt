@@ -1,1 +1,2 @@
 shourav|shourav@gmail.com|$2y$10$.kr3sk85cDpL2HQFPseJ7eFdqwpua1.YYDRsbLTAxfXphI0TxiL5u
+admin|admin@gmail.com|$2y$10$d76XmWHZWS6589BXInrw1uacaZyf3bTIeDwDNq9AyS3hxytAiHefC

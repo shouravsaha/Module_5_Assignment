@@ -1,23 +1,3 @@
-<?php 
-    // session_start();
-    // $email = $_POST["email"] ?? '';
-    // $password = $_POST["password"] ?? '';
-    // $error_msg = "";
-    
-    // if ($email == "shourav@gmail.com" && $password == "12345"){
-    //     $_SESSION["username"] = "john doe";
-    //     header("location:index.php");
-    // }elseif ($email == "joy@gmail.com" && $password = "123456"){
-    //     $_SESSION["username"] = "jony";
-    // }elseif ($email != "" && $password != ""){
-    //     $error_msg = "Invalid creadiantial";
-    // }
-    
-    // if (isset($_SESSION["username"])){
-    //     header("location:index.php");
-    // }
-?>
-
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
@@ -30,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($userEmail === $email && password_verify($password, $hashedPassword)) {
             session_start();
             $_SESSION['email'] = $email;
-            $_SESSION['role'] = 'user'; // You might want to fetch the role from a database
+            $_SESSION['role'] = 'admin'; // You might want to fetch the role from a database
             header("Location: index.php");
             exit;
         }
